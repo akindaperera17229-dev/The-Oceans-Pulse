@@ -1,0 +1,116 @@
+.container {
+    display: flex;
+    flex-direction: row-reverse; /* Reverses the order of child elements */
+    max-width: 1200px; /* Sets a maximum width for responsiveness */
+    margin: 0 auto; /* Centers the container */
+    padding: 20px;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    gap: 20px; /* Adds space between flex items */
+}
+main {
+    flex: 3; /* Gives main content more space compared to sidebar */
+    min-height: 300px; /* Ensures a minimum height */
+}
+
+.con1 { 
+    position: relative;
+    left: 20px; /* Moves the element 20px to the right */
+}
+
+
+aside {
+    flex: 1; /* Assigns smaller space to sidebar */
+    background-color: #001f9990; /* Sets a semi-transparent background */
+    min-width: 250px; /* Prevents sidebar from shrinking too much */
+    padding: 15px;
+    border: 1px solid #ddd; /* Adds a subtle border */
+    margin-right: 20px; /* Creates space between sidebar and content */
+    color: rgb(255, 255, 255); /* Sets text color to white for contrast */
+}
+aside ul li{
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+section {
+    margin-bottom: 20px; /* Adds spacing between sections */
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #33c9ff8b; /* Light blue background */
+    color: black;
+}
+section img {
+    width: 90%;          /* Makes the image responsive */
+    max-width: 600px;    /* Prevents it from getting too big */
+    height: auto;        /* Maintains aspect ratio */
+    border-radius: 5px;
+    object-fit: contain; /* Ensures proper scaling */
+}
+.ref li{
+    list-style: none;
+    padding-bottom: 9px;
+    font-size: 18px;
+    font-weight:bold;
+    list-style: none;
+}
+
+aside a{
+    text-decoration : none;
+    color: #42f6ff;
+    font-size: 16px;
+}
+
+aside li{
+    padding-bottom: 4px;
+}
+
+.stud {
+    text-align: center;
+    line-height: 1.5; /* Slightly increased for better readability */
+    background-color: #cbccc2ef;
+    color: rgb(3, 0, 0);
+    margin-top: 8px;
+    padding: 10px; /* Add padding for better spacing */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .stud {
+        font-size: 14px; /* Reduce font size for smaller screens */
+        padding: 8px; /* Adjust padding */
+        margin-top: 5px; /* Reduce margin */
+    }
+}
+
+.top {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    text-decoration: none;
+
+}
+       
+.top a {
+    padding: 10px 20px; /* Adds padding for button-like feel */
+    background-color: #ffffff; /* Button color */
+    color: rgb(7, 7, 7); /* Text color */
+    text-decoration: none; /* Removes underline */
+    border-radius: 20px; /* Rounds the corners */
+    font-size: 12px; /* Adjust font size */
+    font-weight: bold; /* Make the text stand out */
+}
+
+.top a:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    aside {
+        order: -1; /* Moves sidebar above main content */
+    }
+}
+
