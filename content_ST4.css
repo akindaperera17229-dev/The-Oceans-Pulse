@@ -1,0 +1,195 @@
+/* Content_ST4 page/ */
+#top{
+    text-align: center;
+    color:rgba(255, 255, 255, 0.993);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration:underline;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p{
+    text-align: center;
+    font-size: 16px;
+}
+#introduction{
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 20px;
+    margin: 0;
+    color: #03085e;
+}
+
+#introduction h2{
+    margin: 0;
+    display: flex;
+    padding: 20px;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6) ),url("image/card-4.jpg");
+    background-size: cover;
+    backdrop-filter:20px;
+    color: #fcfcfe;
+    text-align: center;
+    border:solid 2px black;
+    border-radius: 50%;
+    height: 600px;
+    align-items: center;    
+    justify-content: center;
+    font-size: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#importance{
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+#importance img{
+    align-items: center;
+    width: 100%;
+    height: 70%;
+}
+#importance ul{
+    text-align: left;
+}
+.coral1{
+    margin: 0;
+    border: solid 2px black;
+    background-color: #03085e;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 500px;
+    width: 600px;
+    border-radius: 20px;
+    scrollbar-width:thin;
+    scrollbar-color: black rgb(68, 168, 231); 
+}
+.coral1:hover{
+    transform: scale(1.1);
+    transition: transform 0.4s cubic-bezier(0.25, 1.5, 0.5, 1);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 1);
+}
+#threats{
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+#threats img{
+    align-items: center;
+    width: 100%;
+    height: 70%;
+}
+#threats ul{
+    text-align: left;
+}
+.coral2{
+    margin: 0;
+    border: solid 2px black;
+    background-color: #03085e;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 20px;
+    height: 500px;
+    width: 600px;
+    scrollbar-width:thin;
+    scrollbar-color: black rgb(68, 168, 231);
+    
+}
+.coral2:hover{
+    transform: scale(1.1);
+    transition: transform 0.4s cubic-bezier(0.25, 1.5, 0.5, 1);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 1);
+}
+#conservation{
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+#conservation img{
+    align-items: center;
+    width: 100%;
+    height: 70%;
+}
+#conservation ul{
+    text-align: left;
+}
+.coral3{
+    margin: 0;
+    border: solid 2px black;
+    background-color: #03085e;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 20px;
+    height: 500px;
+    width: 600px;
+    scrollbar-width:thin;
+    scrollbar-color: black rgb(68, 168, 231);
+    
+}
+.coral3:hover{
+    transform: scale(1.1);
+    transition: transform 0.4s cubic-bezier(0.25, 1.5, 0.5, 1);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 1);
+}
+#further-reading{
+    text-align: center;
+    color: #03085e;
+}
+#further-reading ul{
+    list-style: none;
+}
+#further-reading ul a{
+    color: black;
+}
+.sublist ul{
+    text-align: center;
+    list-style: none;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: #86f1ff;
+}
+.sublist ul a{
+    color: rgb(0, 1, 1);
+}
+.top {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    text-decoration: none;
+}
+       
+.top a {
+    padding: 10px 20px; /* Adds padding for button-like feel */
+    background-color: #ffffff; /* Button color */
+    color: rgb(7, 7, 7); /* Text color */
+    text-decoration: none; /* Removes underline */
+    border-radius: 20px; /* Rounds the corners */
+    font-size: 12px; /* Adjust font size */
+    font-weight: bold; /* Make the text stand out */
+}
+
+.top a:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+@media (max-width: 768px) {
+    .coral1,.coral2,.coral3{
+        flex-direction:column ;
+        width: 100%;
+        height: 80%;
+    }
+    #top{
+        font-size: 36px;
+    }
+    #introduction h2{
+        font-size: 64px;
+        width:340px;  /* Adjust the width for smaller screens */
+        height: 500px;  /* Adjust height to maintain the oval shape */
+        margin-left: -50px;
+    }
+}

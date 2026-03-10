@@ -1,0 +1,219 @@
+/* Main Container */
+.container {
+    display: flex;
+    padding: 100px;
+    gap: 20px;
+    width: 100%;  /* Adjusted to fill the available width */
+    height: 500px; /* Set height to ensure overflow */
+    margin: 0;
+    overflow-y: auto; /* Enable vertical scrolling */
+    border: 1px solid black;
+    box-sizing: border-box;
+    line-height: 20px;
+    position: relative;
+    
+}
+/* Profile Page Specific Styles */
+.profile-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+}
+        
+@media (max-width: 768px) {
+    .profile-container {
+        grid-template-columns: 1fr;
+    }
+}
+        
+.profile-sidebar {
+    border-radius: 10px;
+    box-shadow: white;
+    padding: 2rem;
+    text-align: center;
+    color:rgb(255, 254, 254);
+}
+        
+.profile-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 1.5rem;
+    border: 5px solid;
+}
+        
+.profile-name {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+        
+.profile-title {
+    color: white;
+    margin-bottom: 1.5rem;
+}
+        
+.profile-main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+        
+.profile-section {
+    background-color: black;
+    border-radius: 10px;
+    padding: 2rem;
+}
+        
+.profile-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+        
+.section-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: var;
+    border-bottom: 2px solid white;
+    padding-bottom: 0.5rem;
+}
+        
+.skill-bar {
+    height: 10px;
+    background-color: rgb(232, 223, 225);
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+        
+.skill-progress {
+    height: 100%;
+    background-color: blue;
+    border-radius: 5px;
+}
+        
+.skill-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+        
+.icons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+        
+.interest-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70px;
+    text-align: center;
+}
+        
+.interest-icon:hover {
+    transform: scale(1.1);
+}
+        
+.icon {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+        
+.icon:hover {
+    background-color: white;
+    color: var(--neutral-100);
+}
+        
+.calendar {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+        
+.calendar th, .calendar td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid white;
+}
+        
+.calendar th {
+    background-color: rgb(13, 191, 240);
+    color: white;
+    border-radius: 20px;
+}
+        
+.calendar .available {
+    background-color: #03e6d3;
+}
+        
+.calendar .unavailable {
+    background-color: #126ef7;
+}
+        
+.contact-form .form-group {
+    margin-bottom: 1rem;
+}
+        
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+        
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid white;
+    border-radius: 1%;
+}
+        
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    border-color: white;
+    outline: none;
+}
+        
+.contact-form button {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 1%;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+}
+        
+.contact-form button:hover {
+    background-color: blue;
+}
+.top {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    text-decoration: none;
+}
+       
+.top a {
+    padding: 10px 20px; /* Adds padding for button-like feel */
+    background-color: #ffffff; /* Button color */
+    color: rgb(7, 7, 7); /* Text color */
+    text-decoration: none; /* Removes underline */
+    border-radius: 20px; /* Rounds the corners */
+    font-size: 12px; /* Adjust font size */
+    font-weight: bold; /* Make the text stand out */
+}
+
+.top a:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}

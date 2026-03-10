@@ -1,0 +1,343 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor Page Student 04 - Kushalee Bandara</title>
+
+    <link rel="stylesheet" href="pageEditor_validator.css">
+    <link rel="stylesheet" href="styleglobal.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    
+    <header id="top">
+        <div class="logo">
+            <img src="image/turtle.png" alt="web-logo">
+            
+            <h1> THE <br> OCEAN'S <br> PULSE</h1>
+        </div>
+        <div class="video-container">
+            <video autoplay muted loop class="bg-video">
+                <source src="videos/background-video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="header-icon">
+            <a href="profile.html">
+                <i class='bx bx-user'></i>
+            </a>
+        </div>
+
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="splash.html">Splash Screen</a></li>
+            <li><a href="table.html" target="_self">Table</a></li>
+            <li><a href="volunteer.html" target="_self">Volunteer</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+        </ul>
+    </nav>
+
+    <section class="stud">
+        <h2>Kushalee Bandara, Student 04</h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+            <section>
+                <h2 id="profile">Profile Page</h2>
+                    <h3>Technical Description</h3>
+                        <h4>HTML Structure</h4>
+                        <ol class="con1">
+                            <li>div: Used extensively to create sections and group elements for styling and layout.</li>
+                            <li>h1, h2, h3: Headings to structure content hierarchically.</li>
+                            <li>p: Paragraphs for descriptive text.</li>
+                            <li>ul, li: Used in the footer to create a list of quick links.</li>
+                            <li>form: Implements the "Contact Me" section with (input) fields for name and email.</li>
+                            <li>button: For form submission (Send Message button).</li>
+                        </ol>
+                        <h4>CSS Styling</h4>
+                        <ol class="con1"></ol>
+                            <h5>Background & Theme</h5>
+                            <ol class="con1">
+                                <li>background-image: Used to set the ocean-themed background with fish.</li>
+                                <li>background-size: cover: Ensures the image covers the entire section.</li>
+                                <li>Color scheme: The page uses a black background for content boxes with contrasting text colors (white, pink, and blue).</li>
+                            </ol>
+                            <h5>Flexbox/Grid for Layout</h5>
+                            <ol class="con1">
+                                <li>display: flex: Used to align elements horizontally, especially for profile info and skills.</li>
+                                <li>justify-content: space-between: Helps distribute content evenly</li>
+                                <li>align-items: center: Ensures vertical alignment.</li>
+                            </ol>
+                            <h5>Typography & Readability</h5>
+                            <ol class="con1">
+                                <li>font-family: Likely a modern sans-serif for readability.</li>
+                                <li>color: White text on dark backgrounds for contrast.</li>
+                                <li>text-align: center: Used in profile sections for alignment.</li>
+                            </ol>
+                            <h5>Skill Progress Bars</h5>
+                            <ol class="con1">
+                                <li>width: X%: Dynamically adjusts the bar length.</li>
+                                <li>background-color: blue: Represents the progress visually.</li>
+                            </ol>
+                            <h5>Form Styling</h5>
+                            <ol class="con1">
+                                <li>input[type="text"], input[type="email"], textarea: Styled with padding and borders for better user experience.</li>
+                                <li>button:hover: Green button likely changes shade on hover.</li>
+                            </ol>
+                    <h3>Accessibility</h3>
+                    <ol class="con1"></ol>
+                        <li>Semantic HTML: Uses proper headings, (label) for forms, and alt text for images to aid screen readers.</li>
+                        <li>High Contrast & Readability: White text on black background for better visibility.</li>
+                        <li>Keyboard Navigation: Supports Tab key navigation and :focus states.</li>
+                        <li>ARIA Attributes: aria-label for better screen reader support, role="progressbar" for skill bars.</li>
+                        <li>Responsive Design: Ensures usability on different screen sizes and zoomed-in views.</li>
+                    </ol>    
+                    <h3>Link to the validation page</h3> 
+                        <p><a href="validation_ST4.html#profileVal">Profile Page Validation</a></p> 
+
+                    <h3>Link to the page</h3>
+                        <p><a href="profile.html">Profile Page</a></p>
+            </section>
+
+            <section>
+                <h2 id="sitemap">Sitemap Page</h2>
+                    <h3>Technical Description</h3>
+                        <h4>HTML Structure</h4>
+                        <ol class="con1"></ol>
+                            <li>div Containers: Used to structure different sections of the site map, such as the background, the site map nodes, and connecting lines.</li>
+                            <li>h1 Tag: Used for the title "Site Map," ensuring semantic meaning and proper heading hierarchy.</li>
+                            <li>VG or canvas: Used for drawing the connecting lines between nodes, ensuring smooth and scalable rendering.</li>
+                            <li>ul and li (Optional): If the site map is structured as a nested list, ul provides a semantic and hierarchical way to structure content.</li>
+                        </ol>
+                        <h4>CSS Styling</h4>
+                        <ol class="con1"></ol>
+                        <h5>Background Styling</h5>
+                        <ol class="con1">
+                            <li>background-image: url('underwater-image.jpg'):Sets the oceanic background with fish.</li>
+                            <li>background-size: cover:Ensures the background image covers the entire viewport.</li>
+                            <li>opacity: 0.8; (if used in a pseudo-element):Softens the background without affecting the readability of text.</li>
+                        </ol>
+                        <h5>Text Styling</h5>
+                        <ol class="con1">
+                            <li>font-size: 2em; font-weight: bold; color: white; text-align: center :Makes the site map title stand out.</li>
+                            <li>font-family: sans-serif:Ensures readability.</li>
+                        </ol>
+                        <h5>Node Styling</h5>
+                        <ol class="con1">
+                            <li>display: flex; justify-content: center; align-items: center :Centers the nodes within their respective divs.</li>
+                            <li>border-radius: 50%; background-color: green :Creates circular nodes.</li>
+                            <li>width: 80px; height: 80px :Maintains uniform sizing for each node.</li>
+                        </ol>
+                        <h5>Flexbox or Grid for Layout</h5>
+                        <ol class="con1">
+                            <li>display: flex; flex-direction: column; align-items: center :Aligns the nodes in a vertical tree structure.</li>
+                            <li>display: grid; (optional alternative):Used for a structured placement of nodes.</li>
+                        </ol>
+                    <h3>Accessibility</h3>
+                    <ol class="con1"></ol>
+                        <li>Semantic HTML - Used h1, nav, and ul for better screen reader navigation.</li>
+                        <li>Color Contrast - Ensured high contrast between text and background for readability.</li>
+                        <li>Keyboard Navigation - Used tabindex="0" for focusable elements and outline styles for visibility.</li>
+                        <li>ARIA Attributes - Added aria-label, role="tree", and aria-expanded for assistive technologies.</li>
+                    </ol>    
+                    <h3>Link to the validation page</h3> 
+                        <p><a href="validation_ST4.html#sitemapVal">Sitemap Validation Page</a></p> 
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="sitemap.html">Sitemap Page</a></p>
+            </section>
+
+            <section>
+                <h2 id="content">Content Page</h2>
+                    <h3>Technical Description</h3>
+                        <h4>HTML Structure</h4>
+                        <ol class="con1"></ol>
+                            <li>header: Likely used for the "PROTECTION OF SEA LIFE" title section.</li>
+                            <li>nav: Navigation links (Introduction, Threats, Protection, Solutions) are structured using an unordered list (ul) or individual (a) elements.</li>
+                            <li>section and article: Used to separate content sections such as "Introduction" and "Threats to Life Underwater."</li>
+                            <li>h1, h2, h3: Headings are used for titles, with (h1) for the main heading and (h2) or (h3) for subsections.</li>
+                            <li>p: Used for descriptive text and explanations.</li>
+                            <li>img: Background images and in-content images (like the turtle caught in plastic) use the (img) tag.</li>
+                        </ol>
+                        <h4>CSS Styling</h4>
+                        <ol class="con1"></ol>
+                        <h5>Background & Styling</h5>
+                        <ol class="con1"></ol>
+                            <li>background-image: The page uses an oceanic background with a full-screen width effect.</li>
+                            <li>background-size: cover: Ensures the background image scales properly.</li>
+                            <li>opacity or overlay: Likely used for readability against the busy background.</li>
+                        </ol>
+                        <h5>Typography & Text Styling</h5>
+                        <ol class="con1"></ol>
+                            <li>font-family: A clean, modern font is likely used for readability.</li>
+                            <li>text-align: center: Aligns the title and navigation links.</li>
+                            <li>color: white: Ensures text contrasts with the blue ocean background.</li>
+                            <li>text-shadow: May be used to enhance readability against a complex background.</li>
+                        </ol>
+                        <h5>Layout & Positioning</h5>
+                        <ol class="con1"></ol>
+                            <li>display: flex: Likely used in sections to align images and text.</li>
+                            <li>padding and margin: Provide spacing around sections for better readability.</li>
+                            <li>max-width: Controls text width to maintain readability.</li>
+                        </ol>
+                        <h5>Responsive Design</h5>
+                        <ol class="con1"></ol>
+                            <li>@media queries: Likely used to adjust layout for smaller screens.</li>
+                            <li>flex-wrap: wrap: Ensures elements adjust on smaller screens.</li>
+                            <li>overflow: hidden: Prevents content from breaking layout.</li>
+                        
+                    <h3>Accessibility</h3>
+                    <ol class="con1"></ol>
+                        <li>Semantic HTML - Uses header, nav, section> for better screen reader navigation.</li>
+                        <li>Proper Headings - h1, h2, h3 follow a logical structure for easy navigation.</li>
+                        <li>Alt Text for Images - Describes images for visually impaired users.</li>
+                        <li>Keyboard Navigation - Ensures links and buttons are usable with the Tab key.</li>
+                        <li>High Contrast - Dark text on light backgrounds for readability.</li>
+                        <li>Responsive Design - Adjusts for different screen sizes and zoom levels.</li>
+                        <li>Descriptive Links - Uses meaningful text instead of “Click Here.”</li>
+                    </ol>
+                    <h3>Link to the validation page</h3> 
+                        <p><a href="validation_ST4.html#contentVal">Content Page Validation</a></p> 
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="content_ST4.html">Content Page</a></p>
+            </section>
+
+            <section>
+                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                <ul class="con1">
+                    <li>Challenges Encountered:
+                        <ol>
+                            <li>Slow Loading Times: The webpage took too long to load, especially on mobile.<br>
+                            Resolution: Optimized images, minified CSS/JS, and used lazy loading.</li>
+                            <li>Inconsistent UI Elements: Buttons and forms appeared differently across devices.<br>
+                            Resolution: Used a design system with standardized styles and components</li>
+                            <li>Accessibility Issues: Screen readers had trouble interpreting the content.<br>
+                            Resolution: Added ARIA labels, improved color contrast, and ensured proper heading structure.</li>
+                            <li>Form Validation Problems: Users could submit incomplete or incorrect forms.<br>
+                            Resolution: Implemented JavaScript validation and backend verification.</li>
+                            <li>Dynamic Content Handling: Updating sections dynamically without reloading was tricky.
+                            Resolution: Used JavaScript (AJAX) to update content smoothly.</li>
+                        </ol>
+                    </li>
+                    <li>Lessons Learned:
+                        <ol>
+                            <li>Performance Matters: Optimizing assets significantly improves user experience.</li>
+                            <li>Consistency is Key: Using a design system ensures uniformity across all pages.</li>
+                            <li>Prioritize Accessibility: A well-structured site benefits all users, including those with disabilities.</li>
+                            <li>User Feedback is Valuable: Testing with real users helps catch usability issues.</li>
+                            <li>Iterate and Improve: Continuous testing and refining lead to a polished final product.</li>
+
+                        </ol>
+                    </li>
+            </section>
+
+            <section>
+                <h2 id="compliance"> Compliance</h2>
+                <ol class="con1">
+                    <li>Accessibility:<br>
+                        Implemented WCAG standards by incorporating descriptive alt text for images, maintaining high color contrast for readability, and structuring the site with semantic HTML to support screen readers.</li>
+                    <li>Data Protection & Privacy:<br>
+                        Currently, no personal data is collected. Any future data collection will require explicit user consent, with a transparent privacy policy explaining data usage and storage practices.</li>
+                    <li>Security Measures:<br>
+                        Secured the website using HTTPS to encrypt data transmission. Followed best practices, such as input validation and security headers, to mitigate vulnerabilities.</li>  
+                    <li>Intellectual Property & Content Rights:<br>
+                        Ensured that all content was either original, properly licensed, or credited to the rightful owners, adhering to copyright laws and fair usage guidelines.</li>
+                </ol>        
+            </section>
+
+            <section>
+                <h2 id="ref">References</h2>
+                    <ul class="ref">
+                        <li>iStock (2025) <i>iStock.</i> Available at: <a href="#">https://www.istockphoto.com/</a> (Last accessed: 27 Feb 2025).</li>
+                        <li>Boxicons<i>Boxicons.</i> Available at: <a href="#">https://boxicons.com/?query=</a> (Last accessed: 4 March 2025).</li>
+                        <li>vecteezy<i>Vecteezy.</i> Available at: <a href="#">https://www.vecteezy.com/</a> (Last accessed:  26 Feb 2025).</li>
+                    </ul>
+            </section>
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+            <ul class="top-level-ul">
+                <li class="con1">Student 4</li>
+                    <ul class="con1"> 
+                        <li><a href="#profile">Profile page</a></li>
+                        <li><a href="#sitemap">Sitemap page</a></li>
+                        <li><a href="#content">Content page</a></li>
+                    </ul>
+                    <ul class="con1"> 
+                        <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                        <li><a href="#compliance">Compliance</a></li>
+                        <li><a href="#ref">References</a></li>
+                    </ul>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="image/turtle.png" alt="Website Logo">
+                <h2>THE <br> OCEAN'S <br> PULSE</h2>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">About Oceans</a></li>
+                    <li><a href="volunteer.html">Get Involved</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-youtube'></i></a>
+            </div>
+            <div class="editor-links">
+                <ul>
+                    <li>Editor Pages</li>
+                    <li><a href="pageEditor_ST1.html">Student 1</a></li>
+                    <li><a href="pageEditor_ST2.html">Student 2</a></li>
+                    <li><a href="pageEditor_ST3.html">Student 3</a></li>
+                    <li><a href="pageEditor_ST4.html">Student 4</a></li>
+                </ul>
+            </div>
+            <div class="editor-links">
+                <ul>
+                    <li>Validation Pages</li>
+                    <li><a href="validation_ST1.html">Student 1</a></li>
+                    <li><a href="validation_ST2.html">Student 2</a></li>
+                    <li><a href="validation_ST3.html">Student 3</a></li>
+                    <li><a href="validation_ST4.html">Student 4</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p>Email: <a href="mailto:Ocean@lifeunderwater.com">Ocean@lifeunderwater.com</a></p>
+                <p>Phone: +1 234 567 890</p>
+            </div>
+        </div>
+    
+        <P>Proudly created by Sub Group 02. All rights reserved.</P>
+
+    </footer>
+</body>
+</html>

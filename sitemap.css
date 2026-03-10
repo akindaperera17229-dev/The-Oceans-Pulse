@@ -1,0 +1,222 @@
+
+
+body {
+   display: flex;
+   flex-direction: column;
+   justify-content: stretch;
+   align-items: stretch; 
+   width: 100%;
+   height: max-content; 
+}
+
+.head-img {
+    float: left;
+    padding-left: 50px;
+    padding-right: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container_1 {
+    position: relative;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+
+.navbar {
+    background-color: #ffffff;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+    justify-content: space-around;
+    border-radius: 30px;
+    box-shadow: 5px 4px #c7c7c7;
+}
+
+.navbar a {
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-right: 30px;
+}
+a.active {
+    color: #4ad66d;
+    font-weight: 600;
+  }
+ a:hover{
+    color:#2dc653 ;
+   
+ }
+ .ver-icons li i{
+    display: none;
+    
+ }
+
+
+
+.tooltip {
+    position: absolute;
+    display: none;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tooltip img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.icons{
+    display: flex;
+}
+ .icons a{
+    color:rgb(255, 0, 0);
+ }
+
+ ul{
+    list-style-type: none;
+ }
+
+ ul a{
+    text-decoration: none;
+ }
+ li{
+    color:#f7f1f1;
+    font-size: small;
+ }
+
+ 
+ .social-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-items: stretch;
+
+ }
+
+ .social-icons a {
+    text-decoration: none;
+ }
+
+ .social-icon {
+    color: black;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    background-color:rgb(255, 255, 255);
+ }
+
+
+
+h1 {
+    text-align: center;
+    margin-top: 3%;
+    padding-right:40px;
+}
+
+.svg-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .svg {
+    width: 100%;
+    height: auto;
+    min-width: 1440px; 
+  }
+
+.circle {
+    fill: #2dc653;
+    transition: fill 0.3s;
+}
+
+.circle:hover {
+    fill: #2e6b37;
+    cursor: pointer;
+    border-color: #25a244;
+    border-width: 3px;
+}
+.selipse{
+    fill: #007f5c ;
+    transition: fill 0.3s;
+}
+
+.selipse:hover {
+    fill: #25a244;
+    cursor: pointer;
+    border-color: #25a244;
+    border-width: 3px;
+}
+.sword{
+    font-size: 11.8px;
+    
+    pointer-events: none;
+    fill: rgb(14, 13, 13);
+}
+
+.word {
+    font-size: 15px;
+    font-weight: bold;
+    pointer-events: none;
+    fill: rgb(13, 12, 12);
+
+}
+
+
+
+  @media screen and (max-width: 1440px) {
+    .svg-container {
+      overflow-x: scroll;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .svg {
+      height: 800px; 
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .svg {
+      height: 1000px; 
+    }
+  }
+  .top {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    text-decoration: none;
+}
+       
+.top a {
+    padding: 10px 20px; /* Adds padding for button-like feel */
+    background-color: #ffffff; /* Button color */
+    color: rgb(7, 7, 7); /* Text color */
+    text-decoration: none; /* Removes underline */
+    border-radius: 20px; /* Rounds the corners */
+    font-size: 12px; /* Adjust font size */
+    font-weight: bold; /* Make the text stand out */
+}
+
+.top a:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
